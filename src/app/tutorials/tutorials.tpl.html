@@ -1,0 +1,21 @@
+<h1>Tutorials <small>{{ vm.subtitle }}</small></h1>
+
+<div class="pure-g page-content">
+    <div class="pure-u-1">
+
+        <ul class="no-bullet post-list">
+            <li dir-paginate="post in vm.posts | itemsPerPage: 10" class="post-list-row">
+                <div class="tutorial-list-entry">
+                    <h2><a ui-sref="tutorial({ id: post.ID, title: post.slug })" class="post-list-title">{{ post.title | decodeHtmlCodes  }}</a></h2>
+
+                    <div class="post-list-excerpt" ng-bind-html="post.excerpt">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="list-pagination">
+            <dir-pagination-controls template-url="common/directives/pagination/dirPagination.tpl.html" on-page-change="vm.scrollToTop()" direction-links="false">
+            </dir-pagination-controls>
+        </div>
+    </div>
+</div>

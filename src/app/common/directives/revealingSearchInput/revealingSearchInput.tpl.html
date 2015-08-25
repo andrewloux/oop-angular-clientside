@@ -1,0 +1,8 @@
+<form ng-submit="searchButtonClick()" name="searchForm">
+    <div class="search-input" ng-class="{ display: showSearchInput }">
+        <input type="text" ng-model="searchTerm" ng-blur="searchInputBlur()">
+    </div>
+    <button>
+        <i class="icon-search"></i>
+    </button>
+</form>

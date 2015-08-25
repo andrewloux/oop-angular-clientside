@@ -3,12 +3,12 @@
     "build": {
       "siteUrl": "http://localhost:8000/",
       "basePath": "/",
-      "apiUrl": "http://localhost:8888/wordpress/wp-json/"
+      "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     },
     "dist": {
       "siteUrl": "http://www.example.com/",
       "basePath": "/",
-      "apiUrl": "http://www.example.com/api/wp-json/"
+      "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     }
   },
   "DEFAULT_TITLE" : "Ontario Online Portal",

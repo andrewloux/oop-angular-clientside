@@ -6,7 +6,7 @@
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     },
     "dist": {
-      "siteUrl": "http://www.example.com/",
+      "siteUrl": "http://alouis93.github.io/oop-angular-clientside/dist/",
       "basePath": "/",
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     }

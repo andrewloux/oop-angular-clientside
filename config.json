@@ -1,13 +1,13 @@
 {
   "PATHS": {
     "build": {
-      "siteUrl": "http://localhost:8000/",
-      "basePath": "/",
-      "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
+      "siteUrl": "http://localhost/angular-wordpress-seed/build/",
+      "basePath": "/angular-wordpress-seed/build/",
+      "apiUrl": "http://localhost/wordpress/wp-json/"
     },
     "dist": {
       "siteUrl": "http://alouis93.github.io/oop-angular-clientside/dist/",
-      "basePath": "/",
+      "basePath": "/oop-angular-clientside/dist/",
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     }
   },

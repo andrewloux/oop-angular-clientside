@@ -6,7 +6,7 @@
       "apiUrl": "http://localhost/wordpress/wp-json/"
     },
     "dist": {
-      "siteUrl": "http://alouis93.github.io/oop-angular-clientside/dist/",
+      "siteUrl": "http://andrewlouis93.github.io/oop-angular-clientside/dist/",
       "basePath": "/oop-angular-clientside/dist/",
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     }

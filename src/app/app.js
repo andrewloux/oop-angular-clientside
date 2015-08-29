@@ -18,7 +18,7 @@ function routesConfig($stateProvider, $locationProvider, $urlRouterProvider) {
                     controllerAs: 'vm'
                 }
             }
-        })
+        })              
         .state('tutorials', {
             url: "/tutorials",
             views: {
@@ -79,6 +79,26 @@ function routesConfig($stateProvider, $locationProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state('register', {
+            url: "/register",
+            views: {
+                'main': {
+                    templateUrl: 'register/register.tpl.html',
+                    controller: 'RegisterController',
+                    controllerAs: 'vm'
+                }
+            }
+        })       
+        .state('login', {
+            url: "/login",
+            views: {
+                'main': {
+                    templateUrl: 'login/login.tpl.html',
+                    controller: 'LoginController',
+                    controllerAs: 'vm'
+                }
+            }
+        })           
         .state('about', {
             url: "/about",
             views: {

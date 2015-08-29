@@ -48,10 +48,12 @@
   .jumbo-btn{
     border: none;
     display: inline-block;
+    text-align:center;
     width: 80%;
     font-size: 1.4em;
     padding: 7%;
-    box-shadow: 0px 4px 27px -5px rgba(0, 0, 0, 0.75)
+    box-shadow: 0px 4px 27px -5px rgba(0, 0, 0, 0.75);
+    color:white;
   }
   .fa{
     float: left;
@@ -200,4 +202,100 @@ p.lead {
   100% {
     opacity: 1;
   }
+}
+@form-link: #2a3644;
+@bottom: #ab4b47;
+@button: #f26964;
+@base: #f4f4f4;
+
+
+.rounded (@radius: 6px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
+}
+.trans (@transition: .1s) {
+  -webkit-transition: all @transition ease-in-out;
+     -moz-transition: all @transition ease-in-out;
+          transition: all @transition ease-in-out;
+}
+.auth-form {
+  margin:70px auto;
+  background:@form-link;
+  width:320px;
+  text-align:center;
+  padding:40px;
+  .rounded;
+
+  h1{
+    margin: 0;
+    margin-bottom:20px;
+    color: white;
+  }
+
+  input {
+    background:rgba(0, 0, 0, 0.2);
+    color:#fff;
+    text-shadow:1px 1px 0px rgba(0, 0, 0,0.3);
+    display:block;
+    width:269px;
+    padding:15px !important;
+    font-size: 15px !important;
+    margin-bottom:10px;
+    .rounded;
+    .trans;
+    outline:none;
+    border:none !important;
+    box-shadow: none !important;
+  }
+
+  button {
+    position:relative;
+    display:block;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:17px;
+    width:270px;
+    .rounded;
+    .trans;
+    font-size:1.2em;
+    background:@button;
+    color:@base;
+    box-shadow:0px 3px 0px @bottom;
+    cursor:pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button:active {
+    top:3px;
+    box-shadow:none;
+  }
+
+
+  input:focus {
+    background:rgba(0, 0, 0, 0.1);
+    .trans;
+  }
+
+  ::-webkit-input-placeholder {
+     color: rgba(225, 225, 225, 0.4);
+  }
+
+  :-moz-placeholder {
+     color: rgba(225, 225, 225, 0.4); 
+  }
+
+  ::-moz-placeholder {
+     color: rgba(225, 225, 225, 0.4);
+  }
+
+  :-ms-input-placeholder {  
+     color: rgba(225, 225, 225, 0.4);
+  }  
+
+
+
 }

@@ -20,7 +20,7 @@
     <title ng-bind="meta.title">%%DEFAULT_TITLE%%</title>
     <meta name="description" content="%%DEFAULT_DESCRIPTION%%" ng-if="false">
     <meta name="description" content="{{ meta.description | stripHtmlTags }}">
-    <meta name="author" content="Michael Bromley">
+    <!-- <meta name="author" content="Michael Bromley"> -->
     <!-- Twitter summary card metadata. One day this might be crawled... -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="@michlbrmly" />
@@ -60,6 +60,7 @@
                 <li><a ng-class="{ selected: vm.activeSection === 'home'}" ui-sref="home"><i class="fa fa-home"></i>Home</a></li>
                 <li><a ng-class="{ selected: vm.activeSection === 'tutorials'}" ui-sref="tutorials"><i class="fa fa-book"></i>Tutorials</a></li>
                 <li><a ng-class="{ selected: vm.activeSection === 'about'}" ui-sref="about"><i class="fa fa-university"></i>About</a></li>
+                <li><a ng-class="{ hide: !vm.authenticated }" ui-sref="home"><i class="fa fa-sign-out"></i>Log Out</a></li>
             </ul>
         </div>
     </div>

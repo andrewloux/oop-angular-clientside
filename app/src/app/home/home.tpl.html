@@ -17,7 +17,7 @@
         </ul>
     </div>
     -->
-      <div class="jumbo-btn-ctr">
+      <div ng-class="{ 'jumbo-btn-ctr':true, 'hide':vm.authenticated }">
         <div class="pure-u-1-2">
           <a ui-sref="register" class="jumbo-btn button-secondary button-success">
             <i class="fa fa-user-plus"></i>Sign Up

@@ -141,10 +141,16 @@ function AppController($rootScope, $window, $location, $timeout, MetadataService
     var vm = this;
 
     vm.showMobileMenu = false;
+    // logged in or nah
+    vm.authenticated = (localStorage.getItem('authenticated')) ? true : false;
 
     vm.toggleMobileMenu = function(e) {
         e.preventDefault();
         vm.showMobileMenu = !vm.showMobileMenu;
+    };
+    vm.logout = function(){
+        localStorage.removeItem('authenticated');
+        $window.location.href = "/";
     };
 
     $rootScope.$on('$stateChangeSuccess', function(e, toState) {
@@ -168,6 +174,10 @@ function AppController($rootScope, $window, $location, $timeout, MetadataService
             });
         }
     });
+
+    angular.element(document).ready(function () {
+        console.log('Hello World');
+    });    
 }
 
 angular

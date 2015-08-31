@@ -9,6 +9,9 @@ function HomeController(BlogService, MetadataService) {
         vm.featuredPosts = posts;
     });
 
+    // logged in or nah
+    vm.authenticated = (localStorage.getItem('authenticated')) ? true : false;
+
     // pass an empty object to use the defaults.
     MetadataService.setMetadata({});
 }

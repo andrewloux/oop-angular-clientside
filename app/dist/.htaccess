@@ -9,7 +9,7 @@
 
     # allow social media crawlers to work by redirecting them to a server-rendered static version on the page
     RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet|Googlebot|redditbot|bingbot)
-    RewriteRule blog/(\d*)/.*$ http://www.example.com/static-page.php?id=$1 [P]
+    RewriteRule blog/(\d*)/.*$ http://104.131.181.96/static-page.php?id=$1 [P]
 
     # Required to allow direct-linking of pages so they can be processed by Angular
     RewriteCond %{REQUEST_FILENAME} !-f

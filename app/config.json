@@ -6,9 +6,9 @@
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     },
     "dist": {
-       "siteUrl": "http://www.example.com/",
+       "siteUrl": "http://104.131.181.96/",
        "basePath": "/",
-      "apiUrl": "http://www.example.com/api/wp-json/"
+      "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     }
   },
   "DEFAULT_TITLE" : "Ontario Online Portal",

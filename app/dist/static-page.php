@@ -5,8 +5,8 @@
  * For a full explanation see https://github.com/michaelbromley/angular-social-demo
  */
 
-$API_URL = "http://www.example.com/api/wp-json/";
-$SITE_URL = "http://www.example.com/";
+$API_URL = "http://neuro.preview.chass.utoronto.ca/wp-json/";
+$SITE_URL = "http://104.131.181.96/";
 
 
 $jsonData = getData($API_URL);
@@ -59,7 +59,7 @@ function makePage($data) {
     <body>
     <div class="main">
 
-        <h2><a href="http://www.example.com/blog">Back to Blog</a></h2>
+        <h2><a href="http://104.131.181.96/blog">Back to Blog</a></h2>
         <h1 class="page-header"><?php echo $data->title; ?></h1>
         <div class="pure-g page-content">
             <div class="pure-u-1">

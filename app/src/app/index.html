@@ -60,7 +60,7 @@
                 <li><a ng-class="{ selected: vm.activeSection === 'home'}" ui-sref="home"><i class="fa fa-home"></i>Home</a></li>
                 <li><a ng-class="{ selected: vm.activeSection === 'tutorials', hide: !vm.authenticated }" ui-sref="tutorials"><i class="fa fa-book"></i>Tutorials</a></li>
                 <li><a ng-class="{ selected: vm.activeSection === 'about'}" ui-sref="about"><i class="fa fa-university"></i>About</a></li>
-                <li><a ng-class="{ hide: !vm.authenticated }" ui-sref="home"><i class="fa fa-sign-out"></i>Log Out</a></li>
+                <li><a ng-class="{ hide: !vm.authenticated }" ng-click="vm.logout()" ui-sref="home"><i class="fa fa-sign-out"></i>Log Out</a></li>
             </ul>
         </div>
     </div>

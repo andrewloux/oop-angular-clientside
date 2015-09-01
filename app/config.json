@@ -11,6 +11,6 @@
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     }
   },
-  "DEFAULT_TITLE" : "Ontario Online Portal",
+  "DEFAULT_TITLE" : "Neuroscience Online Modules",
   "DEFAULT_DESCRIPTION" : "A series of tutorials for the University of Toronto Human Biology Department"
 }

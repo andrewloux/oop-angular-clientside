@@ -41,13 +41,13 @@ passport.use(new LocalStrategy(
 ));
 
 // receives: username and password
-app.post('/authenticate', passport.authenticate('local'), function(req,res){
+app.post('/auth/authenticate', passport.authenticate('local'), function(req,res){
 	// only gets invoked if login is successful
 	res.send({status:0, message: "Successfully authenticated"})
 	// you get 401 on failure.
 })  
 
-app.post('/register', function(req, res) {
+app.post('/auth/register', function(req, res) {
   // attach POST to user schema
   var user = new User({ username: req.body.username, email: req.body.email, password: req.body.password });
   // save in Mongo

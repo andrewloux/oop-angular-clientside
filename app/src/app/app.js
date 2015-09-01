@@ -169,7 +169,7 @@ function AppController($rootScope, $window, $location, $timeout, MetadataService
                 // HTML with the correct page title etc. Check for localhost to prevent
                 // dev sessions from being recorded in analytics.
                 if ($location.host() !== 'localhost') {
-                    $window.ga('send', 'pageview', {page: $location.path()});
+                    //$window.ga('send', 'pageview', {page: $location.path()});
                 }
             });
         }

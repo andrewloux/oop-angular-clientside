@@ -28,7 +28,7 @@ function LoginController(MetadataService, $window) {
         .fail(function(err){
             console.log(err);
             alert("Incorrect username or password");
-        }) 
+        });
     };
 
 	vm.loginUser = function(e){

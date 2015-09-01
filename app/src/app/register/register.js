@@ -12,7 +12,7 @@ function RegisterController(MetadataService, $window) {
         var pw = $("#password").val(),
             pw_c = $("#password-confirm").val(),
             email = $("#email").val(),
-            name = $("#name").val()
+            name = $("#name").val();
 
         if (pw != pw_c){
             return "Passwords must match";
@@ -43,7 +43,7 @@ function RegisterController(MetadataService, $window) {
             if (err.status == 1){
                 alert(err.message);
             }
-            else if (err.status == 0){
+            else if (err.status === 0){
                 // angular redirect.
                 this.saveLoginState();
                 $window.location.href = "/";
@@ -51,12 +51,12 @@ function RegisterController(MetadataService, $window) {
         }.bind(this))
         .fail(function(){
             console.log("unaccounted for error");
-        }) 
+        }); 
     };
 
     vm.registerUser = function(e){
     	e.preventDefault();
-        if (this.validate() == null){
+        if (this.validate() === null){
             this.registerRequest();
         }
         else{

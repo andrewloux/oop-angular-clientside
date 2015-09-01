@@ -6,7 +6,7 @@
  */
 
 $API_URL = "http://neuro.preview.chass.utoronto.ca/wp-json/";
-$SITE_URL = "http://104.131.181.96/";
+$SITE_URL = "http://neurosci.onlinelearning.utoronto.ca/";
 
 
 $jsonData = getData($API_URL);
@@ -59,7 +59,7 @@ function makePage($data) {
     <body>
     <div class="main">
 
-        <h2><a href="http://104.131.181.96/blog">Back to Blog</a></h2>
+        <h2><a href="http://neurosci.onlinelearning.utoronto.ca/blog">Back to Blog</a></h2>
         <h1 class="page-header"><?php echo $data->title; ?></h1>
         <div class="pure-g page-content">
             <div class="pure-u-1">

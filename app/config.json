@@ -6,7 +6,7 @@
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     },
     "dist": {
-       "siteUrl": "http://104.131.181.96/",
+       "siteUrl": "http://neurosci.onlinelearning.utoronto.ca/",
        "basePath": "/",
       "apiUrl": "http://neuro.preview.chass.utoronto.ca/wp-json/"
     }

@@ -14,7 +14,7 @@ function LoginController(MetadataService, $window) {
 
     vm.loginRequest = function(){
         $.post(
-            'http://localhost:3000/authenticate', 
+            'http://neurosci.onlinelearning.utoronto.ca/auth/authenticate', 
             {
                 'username': $("#name").val(),
                 'password': $('#password').val()

@@ -33,7 +33,7 @@ function RegisterController(MetadataService, $window) {
 
     vm.registerRequest = function(){
         $.post(
-            'http://localhost:3000/register', 
+            'http://neurosci.onlinelearning.utoronto.ca/auth/register', 
             {
                 'username': $("#name").val(),
                 'email': $('#email').val(),

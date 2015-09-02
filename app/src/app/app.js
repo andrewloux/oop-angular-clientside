@@ -142,7 +142,8 @@ function AppController($rootScope, $window, $location, $timeout, MetadataService
 
     vm.showMobileMenu = false;
     // logged in or nah
-    vm.authenticated = (localStorage.getItem('authenticated')) ? true : false;
+    // vm.authenticated = (localStorage.getItem('authenticated')) ? true : false;
+    vm.authenticated = true;
 
     vm.toggleMobileMenu = function(e) {
         e.preventDefault();

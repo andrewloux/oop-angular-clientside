@@ -17,6 +17,14 @@ function BlogService($http, $sce, config) {
         return getData('posts?filter[category_name]=tutorials&filter[order]=ASC&filter[orderby]=id');
     }
 
+    function homepageText() {
+        return getData('posts?filter[category_name]=homepage');
+    }
+
+    function aboutText() {
+        return getData('posts?filter[category_name]=about-us');
+    }
+
     function allPostsByTag(tag) {
         return getData('posts?filter[category_name]=post&filter[tag]=' + tag);
     }
@@ -61,7 +69,6 @@ function BlogService($http, $sce, config) {
             result.content = result.content.split("<p>").join("").split("</p>").join("");
         }
         // Re-order the results by the tutorial_order attribute
-
         result.content = $sce.trustAsHtml(result.content);
         return result;
     }
@@ -69,6 +76,8 @@ function BlogService($http, $sce, config) {
     return {
         allPosts: allPosts,
         allTutorials: allTutorials,
+        homepageText: homepageText,
+        aboutText: aboutText,
         allPostsByTag: allPostsByTag,
         allPostsBySearchTerm: allPostsBySearchTerm,
         featuredPosts: featuredPosts,

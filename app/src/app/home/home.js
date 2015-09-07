@@ -3,10 +3,9 @@
 function HomeController(BlogService, MetadataService) {
     var vm = this;
 
-    vm.featuredPosts = [];
-
-    BlogService.featuredPosts().then(function(posts) {
-        vm.featuredPosts = posts;
+    BlogService.homepageText().then(function(posts) {
+        // should only have a single element.
+        vm.homepageText = posts[0];
     });
 
     // logged in or nah
